@@ -1,0 +1,259 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="14.0">
+  <PropertyGroup>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>7.0</ProjectVersion>
+    <ToolchainName>com.Atmel.AVRGCC8.CPP</ToolchainName>
+    <ProjectGuid>{2fd10b89-fba4-47b5-bc65-f19e88110867}</ProjectGuid>
+    <avrdevice>atmega1284p</avrdevice>
+    <avrdeviceseries>none</avrdeviceseries>
+    <OutputType>Executable</OutputType>
+    <Language>CPP</Language>
+    <OutputFileName>$(MSBuildProjectName)</OutputFileName>
+    <OutputFileExtension>.elf</OutputFileExtension>
+    <OutputDirectory>$(MSBuildProjectDirectory)\$(Configuration)</OutputDirectory>
+    <AssemblyName>V20-MBC-ATMEL1284</AssemblyName>
+    <Name>V20-MBC-ATMEL1284</Name>
+    <RootNamespace>V20-MBC-ATMEL1284</RootNamespace>
+    <ToolchainFlavour>Native</ToolchainFlavour>
+    <KeepTimersRunning>true</KeepTimersRunning>
+    <OverrideVtor>false</OverrideVtor>
+    <OverrideVtorValue>
+    </OverrideVtorValue>
+    <eraseonlaunchrule>0</eraseonlaunchrule>
+    <ProgFlashFromRam>true</ProgFlashFromRam>
+    <RamSnippetAddress>0x20000000</RamSnippetAddress>
+    <CacheFlash>true</CacheFlash>
+    <UncachedRange />
+    <BootSegment>0</BootSegment>
+    <AsfFrameworkConfig>
+      <framework-data>
+        <options />
+        <configurations />
+        <files />
+        <documentation help="" />
+        <offline-documentation help="" />
+        <dependencies>
+          <content-extension eid="atmel.asf" uuidref="Atmel.ASF" version="3.43.0" />
+        </dependencies>
+      </framework-data>
+    </AsfFrameworkConfig>
+    <preserveEEPROM>true</preserveEEPROM>
+    <ResetRule>0</ResetRule>
+    <EraseKey />
+    <AAFDebugger>
+      <AAFDebugFiles xmlns="">
+      </AAFDebugFiles>
+    </AAFDebugger>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <ToolchainSettings>
+      <AvrGccCpp>
+  <avrgcc.common.outputfiles.hex>True</avrgcc.common.outputfiles.hex>
+  <avrgcc.common.outputfiles.lss>True</avrgcc.common.outputfiles.lss>
+  <avrgcc.common.outputfiles.eep>True</avrgcc.common.outputfiles.eep>
+  <avrgcc.common.outputfiles.srec>True</avrgcc.common.outputfiles.srec>
+  <avrgcc.common.outputfiles.usersignatures>False</avrgcc.common.outputfiles.usersignatures>
+  <avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>True</avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>
+  <avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>True</avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>
+  <avrgcc.compiler.symbols.DefSymbols>
+    <ListValues>
+      <Value>__AVR_ATmega1284p__</Value>
+      <Value>__AVR_ATmega1284P__</Value>
+      <Value>ARDUINO=108015</Value>
+      <Value>ARDUINO_MAIN</Value>
+      <Value>F_CPU=16000000L</Value>
+      <Value>__AVR__</Value>
+      <Value>ARDUINO_AVR_ATmega1284</Value>
+      <Value>ARDUINO_ARCH_AVR</Value>
+    </ListValues>
+  </avrgcc.compiler.symbols.DefSymbols>
+  <avrgcc.compiler.directories.IncludePaths>
+    <ListValues>
+      <Value>../../../V20-MBC-ATMEL1284</Value>
+      <Value>C:/Users/marke/AppData/Local/arduino15/packages/MightyCore/hardware/avr/2.1.2/libraries/Wire/src</Value>
+      <Value>C:/Users/marke/AppData/Local/arduino15/packages/MightyCore/hardware/avr/2.1.2/libraries/EEPROM/src</Value>
+      <Value>C:/Users/marke/AppData/Local/arduino15/packages/MightyCore/hardware/avr/2.1.2/cores/MCUdude_corefiles</Value>
+      <Value>C:/Users/marke/AppData/Local/arduino15/packages/MightyCore/hardware/avr/2.1.2/cores/MCUdude_corefiles/travis-ci</Value>
+      <Value>C:/Users/marke/AppData/Local/arduino15/packages/MightyCore/hardware/avr/2.1.2/variants/standard</Value>
+      <Value>C:/Users/marke/AppData/Local/ARDUIN~1/packages/arduino/tools/avr-gcc/730-AT~1.1-A//lib/gcc/avr/7.3.0/include</Value>
+      <Value>C:/Users/marke/AppData/Local/ARDUIN~1/packages/arduino/tools/avr-gcc/730-AT~1.1-A/avr/include</Value>
+      <Value>C:/Users/marke/AppData/Local/ARDUIN~1/packages/arduino/tools/avr-gcc/730-AT~1.1-A/avr/include-fixed</Value>
+      <Value>C:/Users/marke/AppData/Local/ARDUIN~1/packages/arduino/tools/avr-gcc/730-AT~1.1-A/avr/include/avr</Value>
+      <Value>C:/Users/marke/AppData/Local/ARDUIN~1/packages/arduino/tools/avr-gcc/730-AT~1.1-A/lib/gcc/avr/4.9.2/include</Value>
+      <Value>C:/Users/marke/AppData/Local/ARDUIN~1/packages/arduino/tools/avr-gcc/730-AT~1.1-A/lib/gcc/avr/4.9.3/include</Value>
+      <Value>{vm.intellisense.add-paths}</Value>
+    </ListValues>
+  </avrgcc.compiler.directories.IncludePaths>
+  <avrgcc.compiler.optimization.level>Optimize (-O1)</avrgcc.compiler.optimization.level>
+  <avrgcc.compiler.optimization.PackStructureMembers>True</avrgcc.compiler.optimization.PackStructureMembers>
+  <avrgcc.compiler.optimization.AllocateBytesNeededForEnum>True</avrgcc.compiler.optimization.AllocateBytesNeededForEnum>
+  <avrgcc.compiler.optimization.DebugLevel>Default (-g2)</avrgcc.compiler.optimization.DebugLevel>
+  <avrgcc.compiler.warnings.AllWarnings>True</avrgcc.compiler.warnings.AllWarnings>
+  <avrgcc.compiler.miscellaneous.OtherFlags />
+  <avrgcccpp.compiler.general.ChangeDefaultCharTypeUnsigned>True</avrgcccpp.compiler.general.ChangeDefaultCharTypeUnsigned>
+  <avrgcccpp.compiler.general.ChangeDefaultBitFieldUnsigned>True</avrgcccpp.compiler.general.ChangeDefaultBitFieldUnsigned>
+  <avrgcccpp.compiler.symbols.DefSymbols>
+    <ListValues>
+      <Value>__AVR_ATmega1284p__</Value>
+      <Value>__AVR_ATmega1284P__</Value>
+      <Value>ARDUINO=108015</Value>
+      <Value>ARDUINO_MAIN</Value>
+      <Value>F_CPU=16000000L</Value>
+      <Value>__AVR__</Value>
+      <Value>ARDUINO_AVR_ATmega1284</Value>
+      <Value>ARDUINO_ARCH_AVR</Value>
+    </ListValues>
+  </avrgcccpp.compiler.symbols.DefSymbols>
+  <avrgcccpp.compiler.directories.IncludePaths>
+    <ListValues>
+      <Value>../../../V20-MBC-ATMEL1284</Value>
+      <Value>C:/Users/marke/AppData/Local/arduino15/packages/MightyCore/hardware/avr/2.1.2/libraries/Wire/src</Value>
+      <Value>C:/Users/marke/AppData/Local/arduino15/packages/MightyCore/hardware/avr/2.1.2/libraries/EEPROM/src</Value>
+      <Value>C:/Users/marke/AppData/Local/arduino15/packages/MightyCore/hardware/avr/2.1.2/cores/MCUdude_corefiles</Value>
+      <Value>C:/Users/marke/AppData/Local/arduino15/packages/MightyCore/hardware/avr/2.1.2/cores/MCUdude_corefiles/travis-ci</Value>
+      <Value>C:/Users/marke/AppData/Local/arduino15/packages/MightyCore/hardware/avr/2.1.2/variants/standard</Value>
+      <Value>C:/Users/marke/AppData/Local/ARDUIN~1/packages/arduino/tools/avr-gcc/730-AT~1.1-A//lib/gcc/avr/7.3.0/include</Value>
+      <Value>C:/Users/marke/AppData/Local/ARDUIN~1/packages/arduino/tools/avr-gcc/730-AT~1.1-A/avr/include</Value>
+      <Value>C:/Users/marke/AppData/Local/ARDUIN~1/packages/arduino/tools/avr-gcc/730-AT~1.1-A/avr/include-fixed</Value>
+      <Value>C:/Users/marke/AppData/Local/ARDUIN~1/packages/arduino/tools/avr-gcc/730-AT~1.1-A/avr/include/avr</Value>
+      <Value>C:/Users/marke/AppData/Local/ARDUIN~1/packages/arduino/tools/avr-gcc/730-AT~1.1-A/lib/gcc/avr/4.9.2/include</Value>
+      <Value>C:/Users/marke/AppData/Local/ARDUIN~1/packages/arduino/tools/avr-gcc/730-AT~1.1-A/lib/gcc/avr/4.9.3/include</Value>
+      <Value>{vm.intellisense.add-paths}</Value>
+    </ListValues>
+  </avrgcccpp.compiler.directories.IncludePaths>
+  <avrgcccpp.compiler.optimization.level>Optimize (-O1)</avrgcccpp.compiler.optimization.level>
+  <avrgcccpp.compiler.optimization.PackStructureMembers>True</avrgcccpp.compiler.optimization.PackStructureMembers>
+  <avrgcccpp.compiler.optimization.AllocateBytesNeededForEnum>True</avrgcccpp.compiler.optimization.AllocateBytesNeededForEnum>
+  <avrgcccpp.compiler.optimization.DebugLevel>Default (-g2)</avrgcccpp.compiler.optimization.DebugLevel>
+  <avrgcccpp.compiler.warnings.AllWarnings>True</avrgcccpp.compiler.warnings.AllWarnings>
+  <avrgcccpp.assembler.debugging.DebugLevel>Default (-Wa,-g)</avrgcccpp.assembler.debugging.DebugLevel>
+</AvrGccCpp>
+    </ToolchainSettings>
+    <VMSETTING_IncludePaths>../../../V20-MBC-ATMEL1284;C:/Users/marke/AppData/Local/arduino15/packages/MightyCore/hardware/avr/2.1.2/libraries/Wire/src;C:/Users/marke/AppData/Local/arduino15/packages/MightyCore/hardware/avr/2.1.2/libraries/Wire/src/utility;C:/Users/marke/AppData/Local/arduino15/packages/MightyCore/hardware/avr/2.1.2/libraries/EEPROM/src;C:/Users/marke/AppData/Local/arduino15/packages/MightyCore/hardware/avr/2.1.2/cores/MCUdude_corefiles;C:/Users/marke/AppData/Local/arduino15/packages/MightyCore/hardware/avr/2.1.2/cores/MCUdude_corefiles/travis-ci;C:/Users/marke/AppData/Local/arduino15/packages/MightyCore/hardware/avr/2.1.2/variants/standard;C:/Users/marke/AppData/Local/ARDUIN~1/packages/arduino/tools/avr-gcc/730-AT~1.1-A//lib/gcc/avr/7.3.0/include;C:/Users/marke/AppData/Local/ARDUIN~1/packages/arduino/tools/avr-gcc/730-AT~1.1-A/avr/include;C:/Users/marke/AppData/Local/ARDUIN~1/packages/arduino/tools/avr-gcc/730-AT~1.1-A/avr/include-fixed;C:/Users/marke/AppData/Local/ARDUIN~1/packages/arduino/tools/avr-gcc/730-AT~1.1-A/avr/include/avr;C:/Users/marke/AppData/Local/ARDUIN~1/packages/arduino/tools/avr-gcc/730-AT~1.1-A/lib/gcc/avr/4.9.2/include;C:/Users/marke/AppData/Local/ARDUIN~1/packages/arduino/tools/avr-gcc/730-AT~1.1-A/lib/gcc/avr/4.9.3/include;{vm.intellisense.add-paths};C:/Users/marke/DEVELO~1/V20-MB~1/V20-MB~1;C:/Users/marke/AppData/Local/ARDUIN~1/packages/MIGHTY~1/hardware/avr/21DE99~1.2/cores/MCUDUD~1;C:/Users/marke/AppData/Local/ARDUIN~1/packages/MIGHTY~1/hardware/avr/21DE99~1.2/variants/standard;C:/Users/marke/AppData/Local/ARDUIN~1/packages/MIGHTY~1/hardware/avr/21DE99~1.2/LIBRAR~1/Wire/src;C:/Users/marke/AppData/Local/ARDUIN~1/packages/MIGHTY~1/hardware/avr/21DE99~1.2/LIBRAR~1/EEPROM/src;</VMSETTING_IncludePaths>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <ToolchainSettings>
+      <AvrGccCpp>
+  <avrgcc.common.outputfiles.hex>True</avrgcc.common.outputfiles.hex>
+  <avrgcc.common.outputfiles.lss>True</avrgcc.common.outputfiles.lss>
+  <avrgcc.common.outputfiles.eep>True</avrgcc.common.outputfiles.eep>
+  <avrgcc.common.outputfiles.srec>True</avrgcc.common.outputfiles.srec>
+  <avrgcc.common.outputfiles.usersignatures>False</avrgcc.common.outputfiles.usersignatures>
+  <avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>True</avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>
+  <avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>True</avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>
+  <avrgcc.compiler.symbols.DefSymbols>
+    <ListValues>
+      <Value>__AVR_ATmega1284p__</Value>
+      <Value>__AVR_ATmega1284P__</Value>
+      <Value>ARDUINO=108015</Value>
+      <Value>ARDUINO_MAIN</Value>
+      <Value>F_CPU=16000000L</Value>
+      <Value>__AVR__</Value>
+      <Value>ARDUINO_AVR_ATmega1284</Value>
+      <Value>ARDUINO_ARCH_AVR</Value>
+    </ListValues>
+  </avrgcc.compiler.symbols.DefSymbols>
+  <avrgcc.compiler.directories.IncludePaths>
+    <ListValues>
+      <Value>../../../V20-MBC-ATMEL1284</Value>
+      <Value>C:/Users/marke/AppData/Local/arduino15/packages/MightyCore/hardware/avr/2.1.2/libraries/Wire/src</Value>
+      <Value>C:/Users/marke/AppData/Local/arduino15/packages/MightyCore/hardware/avr/2.1.2/libraries/EEPROM/src</Value>
+      <Value>C:/Users/marke/AppData/Local/arduino15/packages/MightyCore/hardware/avr/2.1.2/cores/MCUdude_corefiles</Value>
+      <Value>C:/Users/marke/AppData/Local/arduino15/packages/MightyCore/hardware/avr/2.1.2/cores/MCUdude_corefiles/travis-ci</Value>
+      <Value>C:/Users/marke/AppData/Local/arduino15/packages/MightyCore/hardware/avr/2.1.2/variants/standard</Value>
+      <Value>C:/Users/marke/AppData/Local/ARDUIN~1/packages/arduino/tools/avr-gcc/730-AT~1.1-A//lib/gcc/avr/7.3.0/include</Value>
+      <Value>C:/Users/marke/AppData/Local/ARDUIN~1/packages/arduino/tools/avr-gcc/730-AT~1.1-A/avr/include</Value>
+      <Value>C:/Users/marke/AppData/Local/ARDUIN~1/packages/arduino/tools/avr-gcc/730-AT~1.1-A/avr/include-fixed</Value>
+      <Value>C:/Users/marke/AppData/Local/ARDUIN~1/packages/arduino/tools/avr-gcc/730-AT~1.1-A/avr/include/avr</Value>
+      <Value>C:/Users/marke/AppData/Local/ARDUIN~1/packages/arduino/tools/avr-gcc/730-AT~1.1-A/lib/gcc/avr/4.9.2/include</Value>
+      <Value>C:/Users/marke/AppData/Local/ARDUIN~1/packages/arduino/tools/avr-gcc/730-AT~1.1-A/lib/gcc/avr/4.9.3/include</Value>
+      <Value>{vm.intellisense.add-paths}</Value>
+    </ListValues>
+  </avrgcc.compiler.directories.IncludePaths>
+  <avrgcc.compiler.optimization.level>Optimize (-O1)</avrgcc.compiler.optimization.level>
+  <avrgcc.compiler.optimization.PackStructureMembers>True</avrgcc.compiler.optimization.PackStructureMembers>
+  <avrgcc.compiler.optimization.AllocateBytesNeededForEnum>True</avrgcc.compiler.optimization.AllocateBytesNeededForEnum>
+  <avrgcc.compiler.optimization.DebugLevel>Default (-g2)</avrgcc.compiler.optimization.DebugLevel>
+  <avrgcc.compiler.warnings.AllWarnings>True</avrgcc.compiler.warnings.AllWarnings>
+  <avrgcc.compiler.miscellaneous.OtherFlags />
+  <avrgcccpp.compiler.general.ChangeDefaultCharTypeUnsigned>True</avrgcccpp.compiler.general.ChangeDefaultCharTypeUnsigned>
+  <avrgcccpp.compiler.general.ChangeDefaultBitFieldUnsigned>True</avrgcccpp.compiler.general.ChangeDefaultBitFieldUnsigned>
+  <avrgcccpp.compiler.symbols.DefSymbols>
+    <ListValues>
+      <Value>__AVR_ATmega1284p__</Value>
+      <Value>__AVR_ATmega1284P__</Value>
+      <Value>ARDUINO=108015</Value>
+      <Value>ARDUINO_MAIN</Value>
+      <Value>F_CPU=16000000L</Value>
+      <Value>__AVR__</Value>
+      <Value>ARDUINO_AVR_ATmega1284</Value>
+      <Value>ARDUINO_ARCH_AVR</Value>
+    </ListValues>
+  </avrgcccpp.compiler.symbols.DefSymbols>
+  <avrgcccpp.compiler.directories.IncludePaths>
+    <ListValues>
+      <Value>../../../V20-MBC-ATMEL1284</Value>
+      <Value>C:/Users/marke/AppData/Local/arduino15/packages/MightyCore/hardware/avr/2.1.2/libraries/Wire/src</Value>
+      <Value>C:/Users/marke/AppData/Local/arduino15/packages/MightyCore/hardware/avr/2.1.2/libraries/EEPROM/src</Value>
+      <Value>C:/Users/marke/AppData/Local/arduino15/packages/MightyCore/hardware/avr/2.1.2/cores/MCUdude_corefiles</Value>
+      <Value>C:/Users/marke/AppData/Local/arduino15/packages/MightyCore/hardware/avr/2.1.2/cores/MCUdude_corefiles/travis-ci</Value>
+      <Value>C:/Users/marke/AppData/Local/arduino15/packages/MightyCore/hardware/avr/2.1.2/variants/standard</Value>
+      <Value>C:/Users/marke/AppData/Local/ARDUIN~1/packages/arduino/tools/avr-gcc/730-AT~1.1-A//lib/gcc/avr/7.3.0/include</Value>
+      <Value>C:/Users/marke/AppData/Local/ARDUIN~1/packages/arduino/tools/avr-gcc/730-AT~1.1-A/avr/include</Value>
+      <Value>C:/Users/marke/AppData/Local/ARDUIN~1/packages/arduino/tools/avr-gcc/730-AT~1.1-A/avr/include-fixed</Value>
+      <Value>C:/Users/marke/AppData/Local/ARDUIN~1/packages/arduino/tools/avr-gcc/730-AT~1.1-A/avr/include/avr</Value>
+      <Value>C:/Users/marke/AppData/Local/ARDUIN~1/packages/arduino/tools/avr-gcc/730-AT~1.1-A/lib/gcc/avr/4.9.2/include</Value>
+      <Value>C:/Users/marke/AppData/Local/ARDUIN~1/packages/arduino/tools/avr-gcc/730-AT~1.1-A/lib/gcc/avr/4.9.3/include</Value>
+      <Value>{vm.intellisense.add-paths}</Value>
+    </ListValues>
+  </avrgcccpp.compiler.directories.IncludePaths>
+  <avrgcccpp.compiler.optimization.level>Optimize (-O1)</avrgcccpp.compiler.optimization.level>
+  <avrgcccpp.compiler.optimization.PackStructureMembers>True</avrgcccpp.compiler.optimization.PackStructureMembers>
+  <avrgcccpp.compiler.optimization.AllocateBytesNeededForEnum>True</avrgcccpp.compiler.optimization.AllocateBytesNeededForEnum>
+  <avrgcccpp.compiler.optimization.DebugLevel>Default (-g2)</avrgcccpp.compiler.optimization.DebugLevel>
+  <avrgcccpp.compiler.warnings.AllWarnings>True</avrgcccpp.compiler.warnings.AllWarnings>
+  <avrgcccpp.assembler.debugging.DebugLevel>Default (-Wa,-g)</avrgcccpp.assembler.debugging.DebugLevel>
+</AvrGccCpp>
+    </ToolchainSettings>
+    <VMSETTING_IncludePaths>../../../V20-MBC-ATMEL1284;C:/Users/marke/AppData/Local/arduino15/packages/MightyCore/hardware/avr/2.1.2/libraries/Wire/src;C:/Users/marke/AppData/Local/arduino15/packages/MightyCore/hardware/avr/2.1.2/libraries/Wire/src/utility;C:/Users/marke/AppData/Local/arduino15/packages/MightyCore/hardware/avr/2.1.2/libraries/EEPROM/src;C:/Users/marke/AppData/Local/arduino15/packages/MightyCore/hardware/avr/2.1.2/cores/MCUdude_corefiles;C:/Users/marke/AppData/Local/arduino15/packages/MightyCore/hardware/avr/2.1.2/cores/MCUdude_corefiles/travis-ci;C:/Users/marke/AppData/Local/arduino15/packages/MightyCore/hardware/avr/2.1.2/variants/standard;C:/Users/marke/AppData/Local/ARDUIN~1/packages/arduino/tools/avr-gcc/730-AT~1.1-A//lib/gcc/avr/7.3.0/include;C:/Users/marke/AppData/Local/ARDUIN~1/packages/arduino/tools/avr-gcc/730-AT~1.1-A/avr/include;C:/Users/marke/AppData/Local/ARDUIN~1/packages/arduino/tools/avr-gcc/730-AT~1.1-A/avr/include-fixed;C:/Users/marke/AppData/Local/ARDUIN~1/packages/arduino/tools/avr-gcc/730-AT~1.1-A/avr/include/avr;C:/Users/marke/AppData/Local/ARDUIN~1/packages/arduino/tools/avr-gcc/730-AT~1.1-A/lib/gcc/avr/4.9.2/include;C:/Users/marke/AppData/Local/ARDUIN~1/packages/arduino/tools/avr-gcc/730-AT~1.1-A/lib/gcc/avr/4.9.3/include;{vm.intellisense.add-paths};C:/Users/marke/DEVELO~1/V20-MB~1/V20-MB~1;C:/Users/marke/AppData/Local/ARDUIN~1/packages/MIGHTY~1/hardware/avr/21DE99~1.2/cores/MCUDUD~1;C:/Users/marke/AppData/Local/ARDUIN~1/packages/MIGHTY~1/hardware/avr/21DE99~1.2/variants/standard;C:/Users/marke/AppData/Local/ARDUIN~1/packages/MIGHTY~1/hardware/avr/21DE99~1.2/LIBRAR~1/Wire/src;C:/Users/marke/AppData/Local/ARDUIN~1/packages/MIGHTY~1/hardware/avr/21DE99~1.2/LIBRAR~1/EEPROM/src;</VMSETTING_IncludePaths>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="V20-MBC-ATMEL1284.ino">
+      <SubType>compile</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="__vm\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="avr_mmcp.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="diskio.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="integer.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="PetitFS.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="pff.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="pff.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="pffArduino.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="pffconf.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="__vm\.V20-MBC-ATMEL1284.vsarduino.h">
+      <SubType>compile</SubType>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(AVRSTUDIO_EXE_PATH)\\Vs\\Compiler.targets" />
+</Project>
